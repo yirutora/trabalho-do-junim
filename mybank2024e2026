@@ -1,0 +1,43 @@
+final = 's'
+while final == 's':
+    print("seja bem vindo (a) ao mybank")
+    print("simulador de investimento")
+    print("titulos disponives :")
+    print("1-mybank2024")
+    print("2-mybank2026")
+    cliente = int(input("qual você deseja simular"))
+    inicial1 = int(input("quanto deseja investir inicialmente"))
+    gg1 = int(input("qual o valor que deseja investir mensalmente"))
+    vb =0
+    if cliente == 1 :
+        dk =(gg1*32)+inicial1
+        dk1 = dk/100
+        vb = (dk1 * 26.66) + dk
+        ir = (vb/100) * 15
+        b3 =(vb/100)/2
+        vl = vb - b3 - ir
+    else:
+        dk =(gg1*50)+inicial1
+        dk1 = dk/100
+        vb = (dk1 *48.84) + dk
+        ir = (vb/100) * 15
+        b3 =(vb/100)
+        vl = vb - b3 - ir
+
+    print ( "-------------------------------" )
+    print ( "RESULTADO DA SIMULAÇÃO" )
+    print ( "-------------------------------" )
+    print ( "investimento inicial",inicial1 )
+    print ( "valor investido mensalmente por 32 meses",gg1 )
+    print ( "valor total investido",dk )
+    print("----------------------------------")
+    print( "valor bruto",vb )
+    print("I.R.",ir)
+    print("taxa de B3",b3)
+    print("valor liquido",vl)
+    print( "-------------------------------" )
+    final = input("você deseja realizar outra simulação s/n")
+    if final == 'n':
+        break
+
+print("programa encerrado")
